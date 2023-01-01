@@ -7,8 +7,6 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 const Services = () => {
 
     const [ allImage, setAllImage ] = useState([])
-    const [ firstImage, setFirstImage ] = useState()
-    const [ secondImage, setSecondImage ] = useState()
 
     useEffect( () => {
         axios.get('http://localhost:3000/api/servicesimage')
@@ -21,12 +19,6 @@ const Services = () => {
 
     
 
-    // console.log(allImage);
-
-    
-
-    // setFirstImage(data.data.imageOne)
-    //         setSecondImage(data.data.imageTwo)
 
     return(
         <>
