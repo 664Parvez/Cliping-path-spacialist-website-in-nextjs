@@ -1,0 +1,68 @@
+#first_footer{
+    border-top: 1px dashed var(--color-four);
+    padding-top: 30px;
+}
+.footer_logo img{
+    height: auto;
+    width: 250px;
+    padding-bottom: 30px;
+}
+.services ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.services ul li a{
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    color: var(--color-two);
+    font-size: 18px;
+}
+.pages{
+    padding: 40px 0;
+}
+.pages ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.pages ul li a{
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    color: var(--color-four);
+    font-size: 18px;
+}
+.policy_menu ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.policy_menu ul li a{
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    color: var(--color-one);
+    font-size: 18px;
+}
+.social_media ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.social_media ul li a{
+    font-family: var(--paragraph-font);
+    color: var(--color-one);
+    font-size: 20px; 
+}
+
+#second_footer p{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+#second_footer p a{
+    text-decoration: none;
+}
+.payment_method ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.payment_method ul li a{
+    font-family: var(--paragraph-font);
+    color: var(--black-color);
+    font-size: 18px; 
+}
