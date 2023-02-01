@@ -1,0 +1,64 @@
+#pricing_first{
+    padding-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 30px;
+}
+#pricing_first h1{
+    color: var(--color-one);
+    font-family: var(--heading-font);
+    font-size: 45px;
+    font-weight: 600;
+}
+#pricing_first p{
+    font-family: var(--paragraph-font);
+}
+#pricingDivImg{
+    width: 100%;
+}
+
+#pricing_two{
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+#pricing_div{
+    background-color: var(--white-color);
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 25px;
+    box-shadow: 2px 2px 10px #dbdbdb; 
+}
+#pricing_div h3{
+    color: var(--color-one);
+    font-family: var(--heading-font);
+    font-size: 25px;
+    font-weight: 600;
+}
+#price{
+    padding: 20px;
+    background-color: var(--color-two);
+    width: 50%;
+    margin-top: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#price h3{
+    color: var(--white-color);
+    font-size: 40px;
+}
+#price p{
+    font-family: var(--paragraph-font);
+    color: var(--white-color); 
+}
+@media only screen and (min-width: 280px) and (max-width: 428px) {
+    #price{
+        width: 100%;
+    }
+    #pricingDivImg{
+        width: 70%;
+        margin-top: 10px;
+    }
+}

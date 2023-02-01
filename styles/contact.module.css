@@ -1,8 +1,8 @@
 #contact_heading{
-    margin-top: 80px;
+    padding-top: 100px;
 }
 #contact_heading h1{
-    padding: 20px 0;
+    padding-bottom: 20px;
     color: var(--color-one);
     font-family: var(--heading-font);
     font-size: 40px;

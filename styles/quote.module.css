@@ -1,0 +1,29 @@
+#get_a_quote_page{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#get_a_quote_page h1{
+    font-family: var(--heading-font);
+    color: var(--color-one);
+    font-size: 45px;
+    font-weight: 600;
+}
+#get_a_quote_page h2{
+    font-family: var(--heading-font);
+    color: var(--color-one);
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+#get_a_quote_page h4{
+    font-family: var(--heading-font);
+    color: var(--color-four);
+    font-size: 25px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+#get_a_quote_page p{
+    font-family: var(--paragraph-font);
+}

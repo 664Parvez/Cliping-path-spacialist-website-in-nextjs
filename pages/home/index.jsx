@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Link from "next/link";
 
@@ -8,32 +8,55 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 import Footer from "../Components/footer";
 
 
-const Index = () => {
+export async function getServerSideProps () {
+    const response = await fetch("http://localhost:3000/api/home/first-section")
+    const data = await response.json()
 
-    const [ ourWork, setOurWork ] = useState([])
-    const [ ourPartner, setOurPartner ] = useState([])
+    return {
+        props : {
+            data
+        }
+    }
+
+}
 
 
-    useEffect(() => {
+const Main = ({data}) => {
 
-        axios.get('http://localhost:3000/api/home/home-work')
-        .then((work) => {
-            setOurWork(work.data)
-        })
+    console.log(data);
 
-        axios.get("http://localhost:3000/api/home/our-partner")
-        .then((partner) => {
-            setOurPartner(partner.data)
-        })
+
+    // const [ firstSection, setFirstSection ] = useState([])
+    // const [ ourWork, setOurWork ] = useState([])
+    // const [ ourPartner, setOurPartner ] = useState([])
+
+
+    // useEffect(() => {
+
+    //     axios.get("http://localhost:3000/api/home/first-section")
+    //     .then((firstData) => {
+    //         setFirstSection(firstData.data)
+    //     })
+
+    //     axios.get('http://localhost:3000/api/home/home-work')
+    //     .then((work) => {
+    //         setOurWork(work.data)
+    //     })
+
+    //     axios.get("http://localhost:3000/api/home/our-partner")
+    //     .then((partner) => {
+    //         setOurPartner(partner.data)
+    //     })
         
-    }, [])
+    // }, [])
 
     return (
         <>
             <Container>
                 <div className='row d-flex align-items-center' id={HomeCss.homePage}>
                     <div className='col-lg-7'>
-                        <h1 id={HomeCss.head}>Wake up to perfectly edited product photos</h1>
+                        <h1 id={HomeCss.head}></h1> 
+                        {/* {firstSection.firstTitle} */}
                         <h4>Make Your Photo Post Production Flawless and Boost Your Business Effortlessly</h4>
                         <h5 className="my-4">16 Years of Experience | Discount on Bulk Volume</h5>
                         <p className="mb-5">From a simple white background to the most complex clipping paths. Get pixel perfect image editing services, whenever you need them.</p>
@@ -41,7 +64,7 @@ const Index = () => {
                         <button className="btn btn-lg">Get Started <i className="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div className="col-lg-5">
-                        <img src="/img/home-first-sec.png" alt="" />
+                        <img src="" alt="" />
                     </div>
                 </div>
 
@@ -92,6 +115,66 @@ const Index = () => {
                         <p className={HomeCss.secondBoldText}><b>Image editing services for ecommerce businesses and pros, from product photographers to Amazon sellers to global brands.</b></p>
                         <p className="mb-5">Because a quick product shoot can easily turn into a week or more of editing and formatting your images. Let us look after the edits, so you can get back to the work that needs you.</p>
                         <h4>Starting at $25 per image</h4>
+                    </div>
+                </div>
+
+
+                <div id={HomeCss.certified_section}>
+                    <div className="p-4" id={HomeCss.certificate_div}>
+                        <div className="row">
+                            <div className="col-lg-3 col-md-6">
+                                <div className="row">
+                                    <div className="col-3">
+                                        <img src="./img/certified-professionals-icon.png.webp" alt="" />
+                                    </div>
+                                    <div className="col-9">
+                                        <div className={HomeCss.certificate_describe}>
+                                            <h2>1<span className="big_num">5</span>0+</h2>
+                                            <p>Certified Professionals</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6">
+                                <div className="row">
+                                    <div className="col-3">
+                                        <img src="./img/sales-lift-icon.png" alt="" />
+                                    </div>
+                                    <div className="col-9">
+                                        <div className={HomeCss.certificate_describe}>
+                                            <h2>1<span className="big_num">2</span>%</h2>
+                                            <p>Sales Lift</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6">
+                                <div className="row">
+                                    <div className="col-3">
+                                        <img src="./img/faster-delivery-icon.png" alt="" />
+                                    </div>
+                                    <div className="col-9">
+                                        <div className={HomeCss.certificate_describe}>
+                                            <h2><span className="big_num">6</span>3%</h2>
+                                            <p>Faster Delivery</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-6">
+                                <div className="row">
+                                    <div className="col-3">
+                                        <img src="./img/lower-cost-icon.png" alt="" />
+                                    </div>
+                                    <div className="col-9">
+                                        <div className={HomeCss.certificate_describe}>
+                                            <h2><span className="big_num">4</span>0%</h2>
+                                            <p>Lower Cost</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -197,7 +280,7 @@ const Index = () => {
 
                     <div className="row justify-content-center">
 
-                        {
+                        {/* {
                           ourWork.map((items) => {
                             return (
                                 <>
@@ -213,7 +296,7 @@ const Index = () => {
                                 </>
                             )
                           })
-                        }
+                        } */}
                     </div>
                 </div>
 
@@ -480,7 +563,7 @@ const Index = () => {
                 <div id={HomeCss.our_pertner}>
                     <h3>Our Partner</h3>
                     <div className="row text-center">
-                        {
+                        {/* {
                             ourPartner.map((data) => {
                                 return(
                                     <>
@@ -490,7 +573,7 @@ const Index = () => {
                                     </>
                                 )
                             })
-                        }
+                        } */}
                     </div>
                 </div>
 
@@ -546,4 +629,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default Main

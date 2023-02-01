@@ -1,0 +1,13 @@
+#porfolio_page{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+#porfolio_page h1{
+    font-family: var(--heading-font);
+    color: var(--color-one);
+    font-size: 45px;
+    font-weight: 600;
+}
+#how_it_heading p{
+    font-family: var(--paragraph-font);
+}

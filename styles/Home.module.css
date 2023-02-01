@@ -1,5 +1,7 @@
 #homePage{
-    padding: 30px 0;
+    padding: 30px 10px;
+    padding-top: 100px;
+
 }
 #homePage p{
     font-family: var(--paragraph-font);
@@ -10,7 +12,7 @@
     font-size: 50px;
     font-weight: 600;
 }
-#homePage button{
+#homePage a{
     background-color: var(--color-three);
     font-family: var(--paragraph-font);
     font-weight: 500;
@@ -32,7 +34,7 @@
 
 
 #our_feature_section{
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 #feature_content{
     background-color: var(--white-color);
@@ -66,10 +68,14 @@
     color: var(--white-color);
     font-family: var(--paragraph-font);
 }
-
+@media only screen and (min-width: 280px) and (max-width: 428px) {
+    .feature_inner_div{
+        margin-top: 20px;
+    }
+}
 
 #secondSection{
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 #secondSection img{
     width: 70%;
@@ -100,9 +106,72 @@
     }
 }
 
+#certified_section{
+    margin-top: 30px;
+    padding: 0 10px;
+}
+#certificate_div{
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #dbdbdb; 
+ }
+ #certificate_div img{
+     display: inline-block;
+     margin-top: 10px;
+ }
+ #certificate_div h2{
+     font-size: 45px;
+     font-family: var(--heading-font);
+ }
+ #certificate_div p{
+     margin-bottom: 0;
+     font-family: var(--paragraph-font);
+ }
+ #certificate_div .big_num{
+     font-size: 54px;
+ }
+ 
+ 
+ @media only screen and (min-width: 320px) and (max-width: 428px) {
+     #certificate_div .divider1{
+         display: none;
+     }
+     #certificate_div .divider2{
+         display: none;
+     }
+     #certificate_div .divider3{
+         display: none;
+     }
+     .certificate_describe{
+         text-align: center;
+     }
+ }
+ @media only screen and (min-width: 768px) and (max-width: 834px) {
+     #certificate_div .divider2{
+         display: none;
+     }
+     #certificate_describe{
+         text-align: left;
+     }
+ }
+ @media only screen and (min-width: 429px) {
+     .ver_line{
+         display: none;
+     }
+ }
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+     .certificate_div h2{
+         font-size: 40px;
+     }
+     .certificate_div .big_num{
+         font-size: 50px;
+     }
+}
+
 
 #color_section{
     padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #padding_less{
     padding-left: 2px;
@@ -110,164 +179,11 @@
     padding-top: 2px;
     padding-bottom: 2px;
 }
-#color_div{
-    background-color: var(--color-four);
-    padding: 20px;
-    height: 370px;
-    width: 100%;
-    border-radius: 10px;
-}
-#color_div h3{
-    color: var(--white-color);
-    font-family: var(--heading-font);
-    font-size: 25px;
-}
-#color_2{
-    background-color: var(--color-two);
-    padding: 20px;
-    height: 370px;
-    width: 100%;
-    border-radius: 10px;
-}
-#color_2 h3{
-    color: var(--white-color);
-    font-family: var(--heading-font);
-    font-size: 25px;
-}
-#color_3{
-    background-color: var(--color-three);
-    padding: 20px;
-    height: 370px;
-    width: 100%;
-    border-radius: 10px;
-}
-#color_3 h3{
-    color: var(--white-color);
-    font-family: var(--heading-font);
-    font-size: 25px;
-}
-#color_4{
-    background-color: var(--color-five);
-    padding: 20px;
-    height: 370px;
-    width: 100%;
-    border-radius: 10px;
-}
-#color_4 h3{
-    color: var(--white-color);
-    font-family: var(--heading-font);
-    font-size: 25px;
-}
-#color_5{
-    background-color: var(--color-four);
-    padding: 20px;
-    height: 370px;
-    width: 100%;
-    border-radius: 10px;
-}
-#color_5 h3{
-    color: var(--white-color);
-    font-family: var(--heading-font);
-    font-size: 25px;
-}
-#color_6{
-    background-color: var(--color-five);
-    padding: 20px;
-    height: 370px;
-    width: 100%;
-    border-radius: 10px;
-}
-#color_6 h3{
-    color: var(--white-color);
-    font-family: var(--heading-font);
-    font-size: 25px;
-}
-#color_7{
-    background-color: var(--color-four);
-    padding: 20px;
-    height: 370px;
-    width: 100%;
-    border-radius: 10px;
-}
-#color_7 h3{
-    color: var(--white-color);
-    font-family: var(--heading-font);
-    font-size: 25px;
-}
-#color_8{
-    background-color: var(--color-three);
-    padding: 20px;
-    height: 370px;
-    width: 100%;
-    border-radius: 10px;
-}
-#color_8 h3{
-    color: var(--white-color);
-    font-family: var(--heading-font);
-    font-size: 25px;
-}
-#color_9{
-    background-color: var(--color-two);
-    padding: 20px;
-    height: 370px;
-    width: 100%;
-    border-radius: 10px;
-}
-#color_9 h3{
-    color: var(--white-color);
-    font-family: var(--heading-font);
-    font-size: 25px;
-}
-
-#color_1:hover img{
-    animation: moving 6s;
-}
-#color_2:hover img{
-    animation: moving 6s;
-}
-#color_3:hover img{
-    animation: moving 6s;
-}
-#color_4:hover img{
-    animation: moving 6s;
-}
-#color_5:hover img{
-    animation: moving 6s;
-}
-#color_6:hover img{
-    animation: moving 6s;
-}
-#color_7:hover img{
-    animation: moving 6s;
-}
-#color_8:hover img{
-    animation: moving 6s;
-}
-#color_9:hover img{
-    animation: moving 6s;
-}
-
-@keyframes moving {
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(10deg); 
-    }
-    50%{
-        transform: rotate(-10deg); 
-    }
-    75%{
-        transform: rotate(10deg);
-    } 
-    100%{
-        transform: rotate(0deg);
-    }
-}
-
 
 #our_work_section{
     padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #our_work_section h3{
     color: var(--color-one);
@@ -300,6 +216,8 @@
 
 #road_map{
     padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #road_map h3{
     color: var(--color-one);
@@ -307,6 +225,10 @@
     font-size: 40px;
     font-weight: 600;
 }
+#road_map img{
+    width: 100%;
+}
+
 #road_map p{
     font-family: var(--paragraph-font);
 }
@@ -334,6 +256,8 @@
 
 #how_do_we_do{
     padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #how_do_we_do h4{
     color: var(--color-one);
@@ -345,10 +269,14 @@
 #how_do_we_do p{
     font-family: var(--paragraph-font);
 }
-
+@media only screen and (min-width: 280px) and (max-width: 428px) {
+    .roadMapRightImg{
+        width: 50% !important;
+    }
+}
 
 #third_section{
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 #third_section h3{
     color: var(--color-one);
@@ -375,6 +303,10 @@
 #third_section ul li p{
     font-family: var(--paragraph-font);
 }
+#third_section img{
+    width: 100%;
+    height: auto;
+}
 
 
 #outsourced_img{
@@ -392,13 +324,19 @@
     color: var(--color-one);
     font-family: var(--heading-font);
 }
-#outsourced_img button{
+#outsourced_img img{
+    width: 150px;
+    height: auto;
+}
+#outsourced_img a{
     background-color: var(--color-three);
     color: var(--white-color);
 }
 
 #finaly_section{
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 50px;
     border-radius: 20px;
     padding: 50px 30px;
@@ -422,10 +360,22 @@
     border: 1px solid var(--color-four);
     margin-left: 20px;
 }
-
+#finaly_section img{
+    width: 100%;
+}
+@media only screen and (min-width: 280px) and (max-width: 375px) {
+    #get_start_btn{
+        margin-top: 10px;
+    }
+    #get_quote_btn{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
 
 #blog_section{
     margin-bottom: 50px;
+    padding: 0 10px;
 }
 #blog_section h2{
     color: var(--color-four);
@@ -460,7 +410,7 @@
 
 
 #pricing_section{
-  padding: 30px 0;  
+  padding: 30px 10px;  
 }
 #pricing_section h3{
     color: var(--color-four);
@@ -489,14 +439,23 @@
     border-radius: 10px;
     box-shadow: 2px 2px 10px #e4e4e4;
 }
+#pricingImage{
+    height: auto;
+    width: 150px;
+}
 .offer p{
     font-family: var(--paragraph-font);
     font-size: 14px;
     margin-bottom: 0;
 }
+@media only screen and (min-width: 280px) and (max-width: 428px) {
+    #pricing_section h4{
+        margin-top: 20px;
+    }
+}
 
 #customer_review{
-    padding: 30px 0;
+    padding: 30px 10px;
     background-image: url("../public/img/map.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -509,6 +468,16 @@
     font-size: 40px;
     font-weight: 600;
     text-align: center;
+}
+#customer_review ul li{
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: #00B67A;
+    margin: 3px;
+    border-radius: 10px;
+}
+#customer_review ul li i{
+    color: var(--white-color);
 }
 #customer_review h4{
     color: var(--color-one);
@@ -523,10 +492,16 @@
     padding: 20px;
     border-radius: 20px;
 }
+@media only screen and (min-width: 280px) and (max-width: 428px) {
+    #review_box{
+        margin-top: 20px;
+    }
+}
 
 #get_in_touch{
     margin-top: 60px;
     margin-bottom: 50px;
+    padding: 0 10px;
 }
 #get_in_touch h3{
     padding: 20px 0;
@@ -551,4 +526,65 @@
 }
 #get_in_touch i{
     color: var(--color-two);
+}
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 428px) {
+    #homePage{
+        padding: 30px 0px;
+        padding-top: 100px;
+    }
+    #our_feature_section{
+        padding: 30px 0px;
+    }
+    #secondSection{
+        padding: 30px 0px;
+    }
+    #certified_section{
+        margin-top: 30px;
+        padding: 0 0px;
+    }
+    #color_section{
+        padding-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #our_work_section{
+        padding-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #road_map{
+        padding-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #how_do_we_do{
+        padding-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #third_section{
+        padding: 30px 0px;
+    }
+    #pricing_section{
+        padding: 30px 0px;  
+      }
+      #customer_review{
+        padding: 30px 0px;
+      }
+      #finaly_section{
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+      #blog_section{
+        margin-bottom: 50px;
+        padding: 0 0px;
+    }
+    #get_in_touch{
+        margin-top: 60px;
+        margin-bottom: 50px;
+        padding: 0 0px;
+    }
 }

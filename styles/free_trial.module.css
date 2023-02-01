@@ -1,0 +1,37 @@
+#free_trial_page{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#free_trial_page h1{
+    color: var(--color-one);
+    font-family: var(--heading-font);
+    font-size: 45px;
+    font-weight: 600;
+}
+#free_trial_page h4{
+    color: var(--color-four);
+    font-family: var(--heading-font);
+    font-size: 25px;
+    font-weight: 600;
+}
+#free_trial_page h2{
+    color: var(--color-one);
+    font-family: var(--heading-font);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+#free_trial_page h5{
+    color: var(--color-two);
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-weight: 600;
+}
+#free_trial_page p{
+    font-family: var(--paragraph-font);
+}
+#free_trial_page i{
+    color: var(--color-four);
+}

@@ -1,0 +1,133 @@
+#navbar{
+    padding: 10px 30px;
+    padding-bottom: 10px;
+    background-color: rgba(248, 246, 250, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 20000;
+}
+#navbar #logo{
+    width: 200px;
+    height: auto;
+}
+#navbar ul{
+    list-style: none;
+}
+#navbar ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+    color: var(--color-four);
+}
+#navItems{
+    float: right;
+}
+#offer_btn{
+    background-color: var(--color-three);
+    color: var(--color-one) !important;
+    border-radius: 25px;
+}
+#two_btn #trial_btn{
+    border: 1px solid var(--color-one);
+    border-radius: 25px;
+    color: #1b1b1b;
+    margin: 0 10px;
+}
+#two_btn #account_btn{
+    background-color: var(--color-four);
+    border-radius: 25px;
+    color: var(--white-color);
+    margin-left: 10px;
+}
+#response_trial_btn{
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+#response_account_btn{
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 10px;
+}
+
+#service:hover #serviceItems{
+    display: block;
+}
+#serviceItems{
+    display: none;
+    position: absolute;
+    background-color: var(--color-three);
+    padding: 20px 0;
+    padding-left: 30px;
+    padding-right: 50px;
+    border-radius: 25px;
+    border-top: 3px solid var(--color-five);
+    border-bottom: 3px solid var(--color-five);
+}
+#serviceItems ul li{
+    display: block;
+    padding: 10px 0;
+}
+#serviceItems ul li a{
+    color: var(--color-one);
+    transition: .3s ease-in-out;
+}
+#serviceItems ul li a:hover{
+    color: var(--white-color);
+    transition: .3s ease-in-out;
+}
+#hambar{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (min-width: 260px) and (max-width: 428px) {
+    #navbar{
+        padding: 10px 10px;
+    }
+    #navItems{
+        display: none;
+    }
+    #two_btn{
+        display: none;
+    }
+    #two_btn{
+        float: right;
+    }
+    #hambar{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 20px;
+        z-index: 999;
+    } 
+}
+@media only screen and (min-width: 768px) and (max-width: 996px) {
+    #navbar{
+        padding: 15px 10px;
+    }
+    #navItems{
+        display: none;
+    } 
+    #trial_btn{
+        display: none;
+    }
+    #account_btn{
+        display: none;
+    }
+    #hambar{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    } 
+}
+@media only screen and (min-width: 997px) and (max-width: 1100px){
+    #navbar ul li {
+        padding: 0 10px;
+    }
+}

@@ -7,6 +7,50 @@ let year = date.getFullYear()
 const Footer = () => {
     return (
         <>
+
+            <div className={FooterCss.footer_top_section}>
+                <div className="container">
+                    <div className="row d-flex align-items-center justify-content-center">
+                        <div className="col-lg-3 col-md-6 col-sm-12 footer_top_content content_line_phone" id={FooterCss.content_line_one}>
+                            <div className={FooterCss.icon}>
+                                <i className="fa-solid fa-phone"></i>
+                            </div>
+                            <div className={FooterCss.text_section}>
+                                <p className="mb-0 text-white">Give Us A Call</p>
+                                <h5 className="text-white"><b>+(62) 800-567-8990</b></h5>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12 footer_top_content content_line_phone" id={FooterCss.content_line_two}>
+                            <div className={FooterCss.icon}>
+                                <i className="fa-solid fa-envelope"></i>
+                            </div>
+                            <div className={FooterCss.text_section}>
+                                <p className="mb-0 text-white">Send Us A Message</p>
+                                <h5 className="text-white"><b>support@domain.com</b></h5>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12 footer_top_content content_line_phone" id={FooterCss.content_line_three}>
+                            <div className={FooterCss.icon}>
+                                <i className="fa-sharp fa-solid fa-location-dot"></i>
+                            </div>
+                            <div className={FooterCss.text_section}>
+                                <p className="mb-0 text-white">Official Location</p>
+                                <h5 className="text-white"><b>Teuku Umar ST. 1919</b></h5>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 col-sm-12 footer_top_content content_line_phone" id={FooterCss.content_line_four}>
+                            <div className={FooterCss.icon}>
+                                <i className="fa-solid fa-clock"></i>
+                            </div>
+                            <div className={FooterCss.text_section}>
+                                <p className="mb-0 text-white">Opening Hours</p>
+                                <h5 className="text-white"><b>09:00 AM - 18:00 PM</b></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id={FooterCss.first_footer} className="text-center">
 
                 <div className={FooterCss.footer_logo}>
@@ -15,26 +59,25 @@ const Footer = () => {
 
                 <div className={FooterCss.services}>
                     <ul>
-                        <li><Link href="">Background Removal Service</Link></li>
-                        <li><Link href="">Clipping Path Services</Link></li>
-                        <li><Link href="">Ecommerce Product Photo Editing</Link></li>
-                        <li><Link href="">Ghost Mannequin Services</Link></li>
-                        <li><Link href="">Image Masking Service</Link></li>
-                        <li><Link href="">Photo Retouching Services</Link></li>
-                        <li><Link href="">Image Shadow Making Service</Link></li>
-                        <li><Link href="">Color Change Service</Link></li>
-                        <li><Link href="">Multi-Clipping Service</Link></li>
-                        <li><Link href="">Vector Service</Link></li>
+                        <li><Link href="/background-removal-service">Background Removal Service</Link></li>
+                        <li><Link href="/clipping-path-service">Clipping Path Services</Link></li>
+                        <li><Link href="/ghost-mannequine-service">Ghost Mannequin Services</Link></li>
+                        <li><Link href="/image-masking-service">Image Masking Service</Link></li>
+                        <li><Link href="/photo-retuching-service">Photo Retouching Services</Link></li>
+                        <li><Link href="/shadow-service">Image Shadow Making Service</Link></li>
+                        <li><Link href="/color-change-service">Color Change Service</Link></li>
+                        <li><Link href="/multi-clipping-path-service">Multi-Clipping Path Service</Link></li>
+                        <li><Link href="/vector-conversion-service">Vector Conversion Service</Link></li>
                     </ul>
                 </div>
 
                 <div className={FooterCss.pages}>
                     <ul>
-                        <li><Link href="">About Us</Link></li>
-                        <li><Link href="">Blog</Link></li>
-                        <li><Link href="">Pricing</Link></li>
-                        <li><Link href="">Portfolio</Link></li>
-                        <li><Link href="">Contact Us</Link></li>
+                        <li><Link href="/about-us">About Us</Link></li>
+                        <li><Link href="/blog">Blog</Link></li>
+                        <li><Link href="/pricing">Pricing</Link></li>
+                        <li><Link href="/portfolio">Portfolio</Link></li>
+                        <li><Link href="/contact-us">Contact Us</Link></li>
                     </ul>
                 </div>
 
@@ -47,8 +90,8 @@ const Footer = () => {
                                 <li><Link href="">Privacy Policy</Link></li>
                                 <li><Link href="">Refund Policy</Link></li>
                                 <li><Link href="">Terms & Conditions</Link></li>
-                                <li><Link href="">FAQ</Link></li>
-                                <li><Link href="">Help</Link></li>
+                                <li><Link href="/faq">FAQ</Link></li>
+                                <li><Link href="/help">Help</Link></li>
                             </ul>
                         </div>
                     </div>

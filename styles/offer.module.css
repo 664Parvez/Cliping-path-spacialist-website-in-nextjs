@@ -1,0 +1,98 @@
+#offer_page{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#offer_first h1{
+    color: var(--color-one);
+    font-family: var(--heading-font);
+    font-size: 50px;
+    font-weight: 600;
+}
+#offer_first h4{
+    color: var(--color-four);
+    font-family: var(--heading-font);
+}
+#offer_first p{
+    font-family: var(--paragraph-font); 
+}
+#offer_first #quote{
+    background-color: var(--color-one);
+    color: var(--white-color);
+}
+#offer_first #trial{
+    background-color: var(--color-three);
+    margin-left: 10px;
+}
+#offer_first img{
+    width: 100%;
+}
+#offer_second{
+    padding: 30px 0;
+}
+#offer_second h3{
+    font-size: 40px;
+    font-family: var(--heading-font);
+    color: var(--color-one);
+}
+#offer_second p{
+    font-family: var(--paragraph-font);
+    font-size: 22px; 
+}
+
+
+.offer_right{
+    border: 2px dashed var(--color-four);
+    padding: 20px;
+    border-radius: 10px;
+}
+.offer_right h2{
+    font-size: 40px;
+    font-family: var(--heading-font);
+    color: var(--color-one);
+}
+.offer_right h3{
+    font-size: 30px;
+    font-family: var(--heading-font);
+    color: var(--color-one);
+    padding: 20px 0;
+}
+.offer_right p{
+    font-family: var(--paragraph-font);
+}
+.divide{
+    border: 1px dashed var(--color-four);
+    margin: 20px 0;
+}
+.offer_right_div{
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+.offer_right_div h4{
+    font-family: var(--heading-font);
+    font-size: 30px;
+    color: var(--color-three);
+}
+.offer_right_div:hover{
+    background-color: var(--white-color);
+    box-shadow: 1px 1px 5px #dbdbdb; 
+}
+#offer_left{
+    padding-bottom: 30px;
+}
+#offer_left h2{
+    font-size: 40px;
+    font-family: var(--heading-font);
+    color: var(--color-four);
+}
+#offer_left h4{
+    font-size: 25px;
+    font-family: var(--heading-font);
+    color: var(--color-three);
+}
+#offer_left p{
+    font-family: var(--paragraph-font);
+}
