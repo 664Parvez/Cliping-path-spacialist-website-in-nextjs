@@ -26,7 +26,7 @@ export default function first_section (req, res) {
                 },
             ],
             "thirdImg" : "/img/home-second-sec.png",
-            "thirdTitle" : "We’re your virtual photo editing and design studio",
+            "thirdTitle" : "We are your virtual photo editing and design studio",
             "thirdParaOne" : "Image editing services for ecommerce businesses and pros, from product photographers to Amazon sellers to global brands.",
             "thirdParaTwo" : "Because a quick product shoot can easily turn into a week or more of editing and formatting your images. Let us look after the edits, so you can get back to the work that needs you.",
             "startingText" : "Starting at $25 per image",
@@ -99,7 +99,7 @@ export default function first_section (req, res) {
                     "divImg" : "/img/socks.webp"
                 },
             ],
-            "sixthLeftTitle" : "Clipping Path Graphics – Roadmap",
+            "sixthLeftTitle" : "Clipping Path Graphics Roadmap",
             "sixthLeftPara" : "Transparency and clarity are the most valued factors in any service. This is why we share our project plan with our clients after we develop a tailored plan catered to their needs. But the strategy that we follow is quite simple but elegant!",
             "roadMapImg" : "/img/road-map.webp",
             "sixthRight" : [
@@ -133,7 +133,7 @@ export default function first_section (req, res) {
                 {
                     "sevenImg" : "/img/researcher.svg",
                     "sevenTitle" : "Pixel perfect results",
-                    "sevenPara" : "Our designers can handle even the most complex cutouts — no straight polygonal lasso lines where they shouldn’t be",
+                    "sevenPara" : "Our designers can handle even the most complex cutouts — no straight polygonal lasso lines where they shouldn not be",
                 },
                 {
                     "sevenImg" : "/img/support.svg",
@@ -156,7 +156,7 @@ export default function first_section (req, res) {
                     "sevenPara" : "Get consistent, quality images that sell, in every format you need",
                 },
             ],
-            "eightTitle" : "You don’t have to do everything yourself",
+            "eightTitle" : "You don not have to do everything yourself",
             "eightPara" : "Outsourced image editing services are ideal if you are...",
             "eightDivs" : [
                 {
@@ -173,7 +173,7 @@ export default function first_section (req, res) {
                 },
             ],
             "nineTitle" : "How The CPS Works",
-            "ninePara" : "When it comes to editing and photo retouching service, The CPS is a stand-alone icon that has been dominating the marketplace and boosting its clients’ business for years. CPS, unlike anything, focuses on quality to create a long-lasting impression.",
+            "ninePara" : "When it comes to editing and photo retouching service, The CPS is a stand-alone icon that has been dominating the marketplace and boosting its clients business for years. CPS, unlike anything, focuses on quality to create a long-lasting impression.",
             "nineFirstLeft" : [
                 {
                     "firstLeftTitle" : "1. Place Your Work Order",
