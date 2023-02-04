@@ -1,6 +1,7 @@
 import Container from "../Components/container"
 import LoginCss from "../../styles/login.module.css"
-import Image from "next/image"
+
+import Image from "next/legacy/image"
 import Link from "next/link"
 import Head from "next/head"
 
@@ -9,6 +10,9 @@ import Footer from "../Components/footer"
 
 
 const login = () => {
+
+    const css = {width: "100%", height: "auto" }
+
     return(
         <>
             <Head>   
@@ -22,7 +26,7 @@ const login = () => {
 
             <Container>
                 <div id={LoginCss.login_logo} className="text-center">
-                    <img src="/img/logo.png" alt="" />
+                    <Image width="200" height="60" layout="intrinsic" style={css} src="/img/logo.png" alt="" />
                 </div>
 
                 <div id={LoginCss.login_form}>
@@ -51,18 +55,18 @@ const login = () => {
                                     <div className="row text-center" id={LoginCss.login_app_logo}>
                                         <div className="col-lg-6 mt-3">
                                             <Link href="">
-                                                <img src="/img/google.png" alt="" />
+                                                <Image width="200" height="50" layout="intrinsic" style={css} src="/img/google.png" alt="" />
                                             </Link>
                                         </div>
                                         <div className="col-lg-6 mt-3">
                                             <Link href="">
-                                                <img src="/img/facebook.png" alt="" />
+                                                <Image width="200" height="50" layout="intrinsic" style={css} src="/img/facebook.png" alt="" />
                                             </Link>
                                         </div>
                                     </div>
 
                                     <div className="text-center mt-4">
-                                    <p>Don't have an account ? <Link href="/sign-up">Register</Link></p>
+                                    <p>Do not have an account ? <Link href="/sign-up">Register</Link></p>
                                     </div>
                                 </div>
 

@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Image from "next/legacy/image"
 
 import Container from "../Components/container"
 import PortfolioCss from '../../styles/portfolio.module.css'
@@ -18,6 +19,8 @@ export async function getServerSideProps () {
 }
 
 const portfolio = ({data}) => {
+
+    const css = {width: "100%", height: "auto" }
 
     return (
         <>
@@ -89,8 +92,8 @@ const portfolio = ({data}) => {
                                     data.map((items) => {
                                         return (
                                             <>
-                                                <div className="col-lg-4">
-                                                    <img src={items.img} alt="" />
+                                                <div className="col-lg-4 mt-3">
+                                                    <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                 </div>
                                             </>
                                         )
@@ -111,8 +114,8 @@ const portfolio = ({data}) => {
                                             <>
                                                 {
                                                     items.service === "background removal" ? 
-                                                    <div className="col-lg-4">
-                                                        <img src={items.img} alt="" />
+                                                    <div className="col-lg-4 mt-3">
+                                                        <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                     </div> : ""
                                                 }
                                             </>
@@ -135,8 +138,8 @@ const portfolio = ({data}) => {
                                             <>
                                                 {
                                                     items.service === "clipping path" ? 
-                                                    <div className="col-lg-4">
-                                                        <img src={items.img} alt="" />
+                                                    <div className="col-lg-4 mt-3">
+                                                        <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                     </div> : ""
                                                 }
                                             </>
@@ -159,8 +162,8 @@ const portfolio = ({data}) => {
                                             <>
                                                 {
                                                     items.service === "image masking" ? 
-                                                    <div className="col-lg-4">
-                                                        <img src={items.img} alt="" />
+                                                    <div className="col-lg-4 mt-3">
+                                                        <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                     </div> : ""
                                                 }
                                             </>
@@ -183,8 +186,8 @@ const portfolio = ({data}) => {
                                             <>
                                                 {
                                                     items.service === "photo retouching" ? 
-                                                    <div className="col-lg-4">
-                                                        <img src={items.img} alt="" />
+                                                    <div className="col-lg-4 mt-3">
+                                                        <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                     </div> : ""
                                                 }
                                             </>
@@ -207,8 +210,8 @@ const portfolio = ({data}) => {
                                             <>
                                                 {
                                                     items.service === "shadow" ? 
-                                                    <div className="col-lg-4">
-                                                        <img src={items.img} alt="" />
+                                                    <div className="col-lg-4 mt-3">
+                                                        <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                     </div> : ""
                                                 }
                                             </>
@@ -231,8 +234,8 @@ const portfolio = ({data}) => {
                                             <>
                                                 {
                                                     items.service === "vector conversion" ? 
-                                                    <div className="col-lg-4">
-                                                        <img src={items.img} alt="" />
+                                                    <div className="col-lg-4 mt-3">
+                                                        <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                     </div> : ""
                                                 }
                                             </>
@@ -255,8 +258,8 @@ const portfolio = ({data}) => {
                                             <>
                                                 {
                                                     items.service === "multi clipping path" ? 
-                                                    <div className="col-lg-4">
-                                                        <img src={items.img} alt="" />
+                                                    <div className="col-lg-4 mt-3">
+                                                        <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                     </div> : ""
                                                 }
                                             </>
@@ -279,8 +282,8 @@ const portfolio = ({data}) => {
                                             <>
                                                 {
                                                     items.service === "ghost mannequin" ? 
-                                                    <div className="col-lg-4">
-                                                        <img src={items.img} alt="" />
+                                                    <div className="col-lg-4 mt-3">
+                                                        <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                     </div> : ""
                                                 }
                                             </>
@@ -303,8 +306,8 @@ const portfolio = ({data}) => {
                                             <>
                                                 {
                                                     items.service === "color change" ? 
-                                                    <div className="col-lg-4">
-                                                        <img src={items.img} alt="" />
+                                                    <div className="col-lg-4 mt-3">
+                                                        <Image width="250" height="190" layout="responsive" style={css} src={items.img} alt="" />
                                                     </div> : ""
                                                 }
                                             </>

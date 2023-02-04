@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head"
+import Image from "next/legacy/image";
 
 import Container from "../Components/container"
 import PricingCss from '../../styles/pricing.module.css'
@@ -22,6 +23,9 @@ export async function getServerSideProps () {
 
 
 const price = ({data}) => {
+
+    const css = {width: "100%", height: "auto" }
+
     return (
         <>
             <Head>
@@ -42,7 +46,7 @@ const price = ({data}) => {
                             <p>{data.pricingHeadPara}</p>
                         </div>
                         <div className="col-lg-6 text-center">
-                            <img src={data.pricingHeadImg} alt="" />
+                            <Image width="350" height="200" layout="intrinsic" style={css} src={data.pricingHeadImg} alt="" />
                         </div>
                     </div>
                 </div>
@@ -66,7 +70,7 @@ const price = ({data}) => {
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-4 col-sm-12 text-center">
-                                                        <img id={PricingCss.pricingDivImg} src={items.pricingImg} alt="" />
+                                                        <Image width="190" height="190" layout="responsive" style={css} id={PricingCss.pricingDivImg} src={items.pricingImg} alt="" />
                                                     </div>
                                                 </div>
                                             </div>

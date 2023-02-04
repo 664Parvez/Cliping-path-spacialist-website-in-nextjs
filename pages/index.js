@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
+import Image from "next/legacy/image"
 import Link from "next/link";
 import axios from 'axios'
 
@@ -56,7 +57,11 @@ const Home = ({data}) =>  {
         
     }, [])
 
+    const css = {width: "100%", height: "auto" }
+
   return (
+
+
     <>
       <Head>
         <title>Clipping Path Specialist</title>
@@ -78,7 +83,7 @@ const Home = ({data}) =>  {
                         <Link href="/get-a-quote" className="btn btn-lg">Get Started <i className="fa-solid fa-arrow-right"></i></Link>
                     </div>
                     <div className="col-lg-5">
-                        <img src={data.firstImg} alt="" />
+                        <Image width="200" height="250" src={data.firstImg} layout="responsive" style={css} alt="" />
                     </div>
                 </div>
 
@@ -116,7 +121,7 @@ const Home = ({data}) =>  {
 
                 <div className="row d-flex align-items-center" id={HomeCss.secondSection}>
                     <div className="col-lg-5 text-center">
-                        <img src={data.thirdImg} alt="" />
+                        <Image width="400" height="400" layout="intrinsic" style={css} src={data.thirdImg} alt="" />
                     </div>
                     <div className="col-lg-7">
                         <h3>{data.thirdTitle}</h3>
@@ -137,10 +142,10 @@ const Home = ({data}) =>  {
                                     <>        
                                         <div className="col-lg-3 col-md-6">
                                             <div className="row">
-                                                <div className="col-3">
-                                                    <img src={items.forthImg} alt="" />
+                                                <div className="col-2">
+                                                    <Image width="200" height="200" layout="intrinsic" style={css} src={items.forthImg} alt="" />
                                                 </div>
-                                                <div className="col-9">
+                                                <div className="col-10">
                                                     <div className={HomeCss.certificate_describe}>
                                                         <h2>{items.forthTitle}</h2>
                                                         <p>{items.forthPara}</p>
@@ -171,7 +176,7 @@ const Home = ({data}) =>  {
                                                         <h3 className="pb-5">{items.divTitle}</h3>
                                                     </div>
                                                     <div className="color_img">
-                                                        <img src={items.divImg} alt="" />
+                                                        <Image width="200" height="200" layout="intrinsic" style={css} src={items.divImg} alt="" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -215,7 +220,7 @@ const Home = ({data}) =>  {
                         <div className="col-lg-5">
                             <h3>{data.sixthLeftTitle}</h3>
                             <p>{data.sixthLeftPara}</p>
-                            <img src={data.roadMapImg} alt="img" />
+                            <Image width="200" height="300" layout="responsive" style={css} src={data.roadMapImg} alt="img" />
                         </div>
 
                         <div className="col-lg-7">
@@ -227,12 +232,13 @@ const Home = ({data}) =>  {
                                             return (
                                                 <>
                                                     <div className="col-lg-3 col-md-3 col-sm-12">
-                                                        <img className={HomeCss.roadMapRightImg} src={items.sixthImg} alt="img" />
+                                                        <Image width="150" height="150" layout="intrinsic" style={css} className={HomeCss.roadMapRightImg} src={items.sixthImg} alt="img" />
                                                     </div>
                                                     <div className="col-lg-9 col-md-9 col-sm-12">
                                                         <h4>{items.sixthTitle}</h4>
                                                         <p className="mb-5">{items.sixthPara}</p>
                                                     </div>
+                                                    <hr />
                                                 </>
                                             )
                                         })
@@ -252,7 +258,7 @@ const Home = ({data}) =>  {
                                 return (
                                     <>            
                                         <div className="col-lg-4">
-                                            <img src={items.sevenImg} alt="img" />
+                                            <Image width="200" height="200" layout="intrinsic" style={css} src={items.sevenImg} alt="img" />
                                             <h4>{items.sevenTitle}</h4>
                                             <p>{items.sevenPara}</p>
                                         </div>
@@ -274,7 +280,7 @@ const Home = ({data}) =>  {
                                 return (
                                     <>            
                                         <div className="col-lg-4">
-                                            <img src={items.eightImg} alt="img" />
+                                            <Image width="200" height="200" layout="intrinsic" style={css} src={items.eightImg} alt="img" />
                                             <p>{items.eightDivPara}</p>
                                         </div>
                                     </>
@@ -330,7 +336,7 @@ const Home = ({data}) =>  {
                             </div>
                         </div>
                         <div className="col-lg-4 mt-4 text-center">
-                            <img src={data.nineImg} alt="img" />
+                            <Image width="200" height="150" layout="responsive" style={css} src={data.nineImg} alt="img" />
                         </div>
                     </div>
                 </div>
@@ -348,7 +354,7 @@ const Home = ({data}) =>  {
                                     <>            
                                         <div className="col-lg-4">
                                             <h4>{items.pricingDivTitle}</h4>
-                                            <img id={HomeCss.pricingImage} src={items.pricingImg} alt="img" />
+                                            <Image width="200" height="200" layout="intrinsic" style={css} id={HomeCss.pricingImage} src={items.pricingImg} alt="img" />
                                             <p>Start at <span>{items.pricingStart}</span>image</p>
 
                                             <div className={HomeCss.offer}>
@@ -405,7 +411,7 @@ const Home = ({data}) =>  {
                             <Link href="/get-a-quote" className="btn btn-lg" id={HomeCss.get_quote_btn}>Get a Quote</Link>
                         </div>
                         <div className="col-lg-5">
-                            <img src={data.twilveImg} alt="img" /> 
+                            <Image width="200" height="150" layout="responsive" style={css} src={data.twilveImg} alt="img" /> 
                         </div>
                     </div>
                 </div>
@@ -419,7 +425,7 @@ const Home = ({data}) =>  {
                                 return(
                                     <>
                                         <div className="col-lg-2">
-                                            <img src={data.img} alt="" />
+                                            <Image width="200" height="50" layout="intrinsic" style={css} src={data.img} alt="" />
                                         </div>
                                     </>
                                 )

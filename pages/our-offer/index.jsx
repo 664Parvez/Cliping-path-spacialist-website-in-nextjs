@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from "next/link";
 
 import offerCss from '../../styles/offer.module.css'
@@ -11,6 +11,9 @@ import Container from '../Components/container'
 
 
 const offer = () => {
+
+    const css = {width: "100%", height: "auto" }
+
     return (
         <>
 
@@ -37,8 +40,8 @@ const offer = () => {
                                 </div>
 
                             </div>
-                            <div className="col-lg-5">
-                                <img src="/img/offer.png" alt="" />
+                            <div className="col-lg-5 text-center">
+                                <Image width="500" height="250" layout="intrinsic" style={css} src="/img/offer.png" alt="" />
                             </div>
                         </div>
                     </div>

@@ -2,6 +2,7 @@ import Container from '../Components/container'
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from "next/legacy/image"
 
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/footer';
@@ -22,6 +23,8 @@ export async function getServerSideProps () {
 
 
 const Services = ({ data }) => {
+
+    const css = {width: "100%", height: "auto" }
 
     console.log(data);
 
@@ -56,7 +59,7 @@ const Services = ({ data }) => {
                                                         <div className="col-lg-4">
                                                             <div className="row">
                                                                 <div className="col-3">
-                                                                    <img src={items.img} alt="" />
+                                                                    <Image width="130" height="130" layout="responsive" style={css} src={items.img} alt="" />
                                                                 </div>
                                                                 <div className="col-9">
                                                                     <h4>{items.number}</h4>
@@ -100,7 +103,7 @@ const Services = ({ data }) => {
                     <div className={ServiceCss.professional_photo_section_one}>
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <img src={data.thirdImg} alt="" />
+                                    <Image width="200" height="140" layout="responsive" style={css} src={data.thirdImg} alt="" />
                                 </div>
                                 <div className="col-lg-6">
                                     <h2 className="heading">{data.thirdTitle}</h2>
@@ -157,7 +160,7 @@ const Services = ({ data }) => {
                                     return (
                                         <>    
                                             <div className="col-lg-3">
-                                                <img id={ServiceCss.portfolio_img} src={items.img} alt="" />
+                                                <Image width="200" height="140" layout="responsive" style={css} id={ServiceCss.portfolio_img} src={items.img} alt="" />
                                             </div>
                                         </>
                                     )
@@ -166,7 +169,7 @@ const Services = ({ data }) => {
 
                         </div>
 
-                        <Link href="/portfolio" className='btn btn-lg' id={ServiceCss.portfolio_btn}>See More Example <i class="fa-solid fa-arrow-right"></i></Link>
+                        <Link href="/portfolio" className='btn btn-lg mt-4' id={ServiceCss.portfolio_btn}>See More Example <i class="fa-solid fa-arrow-right"></i></Link>
                     </div>
 
 
@@ -181,7 +184,7 @@ const Services = ({ data }) => {
                                 </p>
                             </div>
                             <div className="col-lg-5">
-                                <img src={data.sixthImg} alt="" />
+                                <Image width="200" height="180" layout="responsive" style={css} src={data.sixthImg} alt="" />
                             </div>
                         </div>
                     </div>
@@ -193,7 +196,7 @@ const Services = ({ data }) => {
                                 <div className="row d-flex align-items-center">
                                     <div className="col-lg-2 col-md-3">
                                         <div className={ServiceCss.clip_img} id={ServiceCss.price_img_div}>
-                                            <img src={data.priceImg} alt="" />
+                                            <Image width="200" height="200" layout="responsive" style={css} src={data.priceImg} alt="" />
                                         </div>
                                     </div>
                                     <div className="col-lg-8 col-md-7 clipping">

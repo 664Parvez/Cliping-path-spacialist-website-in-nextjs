@@ -24,7 +24,7 @@ export default function ghost_mannequine_service (req, res) {
         ],
         "secondTitle" : "Impress Your Customers With Perfect Clipping Path",
         "secondPara" : "Sell more as you dazzle your customers with crisp and clean product photos with the help of our outsourcing photo editing services.",
-        "thirdImg" : "/img/image-background-removal-services.png",
+        "thirdImg" : "/img/Clipping-Path-Services-removebg-preview.png",
         "thirdTitle" : "How Clipping Path Can Make Or Break Your Business",
         "thirdPara" : "Statistics say, 75% of online shoppers decide to buy after seeing the product photos. If it’s of good quality, your brand will-",
         "thirdPoint" : [

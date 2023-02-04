@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import Image from "next/legacy/image"
 
 import Container from "../Components/container"
 import HowitCss from '../../styles/how_it_work.module.css'
@@ -22,6 +23,9 @@ export async function getServerSideProps () {
 
 
 const how_it = ({data}) => {
+
+    const css = {width: "100%", height: "auto" }
+
     return (
         <>
 
@@ -41,8 +45,8 @@ const how_it = ({data}) => {
                         <h1>{data.headTitle}</h1>
                         <p>{data.headPara}</p>
                     </div>
-                    <div className="col-lg-5">
-                        <img src={data.headImg} alt="" />
+                    <div className="col-lg-5 text-center">
+                        <Image width="200" height="190" layout="responsive" style={css} src={data.headImg} alt="" />
                     </div>
                 </div>
             </div>
@@ -55,7 +59,7 @@ const how_it = ({data}) => {
                             return(
                                 <>
                                     <div className="col-lg-5">
-                                        <img src={items.firstImg} alt="" />
+                                        <Image width="200" height="150" layout="responsive" style={css} src={items.firstImg} alt="" />
                                     </div>
                                     <div className="col-lg-7">
                                         <h2>{items.firstStep}</h2>
@@ -101,7 +105,7 @@ const how_it = ({data}) => {
             <div id={HowitCss.pixel_perfect_section}>
                 <div className="row d-flex align-items-center">
                     <div className="col-lg-3 text-center">
-                        <img src={data.secondImg} alt="" />
+                        <Image width="160" height="160" layout="intrinsic" style={css} src={data.secondImg} alt="" />
                     </div>
                     <div className="col-lg-9">
                         <h3>{data.secondTitle}</h3>

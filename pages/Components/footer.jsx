@@ -1,10 +1,17 @@
+import Image from "next/legacy/image"
 import Link from "next/link"
 import FooterCss from "../../styles/footer.module.css"
 
 let date = new Date()
 let year = date.getFullYear()
 
+
 const Footer = () => {
+
+
+    const css = {width: "100%", height: "auto" }
+
+
     return (
         <>
 
@@ -54,7 +61,7 @@ const Footer = () => {
             <div id={FooterCss.first_footer} className="text-center">
 
                 <div className={FooterCss.footer_logo}>
-                    <img src="/img/logo.png" alt="" />
+                    <Image width="200" height="60" layout="intrinsic" style={css} src="/img/logo.png" alt="" />
                 </div>
 
                 <div className={FooterCss.services}>

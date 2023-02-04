@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import Image from "next/legacy/image"
 
 import Head from "next/head"
 import Link from "next/link"
@@ -25,6 +26,8 @@ export async function getServerSideProps () {
 
 const Post = ({data}) => {
 
+    const css = {width: "100%", height: "auto" }
+
     const router = useRouter().query    
 
     return (
@@ -48,7 +51,7 @@ const Post = ({data}) => {
                                         
                                         router.post === items.blogSlug ? 
                                             <div>
-                                                <img src={items.blogImg} alt="" />
+                                                <Image width="200" height="100" layout="responsive" style={css} src={items.blogImg} alt="" />
                                                 <h1 className="my-4">{items.blogTitle}</h1>
                                                 <h3 className="my-3">{items.blogSubTitle}</h3>
                                                 <p>{items.blogPara}</p> 

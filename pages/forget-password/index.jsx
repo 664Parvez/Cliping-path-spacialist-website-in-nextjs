@@ -1,6 +1,6 @@
 import Container from "../Components/container"
 import ForgetCss from "../../styles/forget-password.module.css"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Link from "next/link"
 import Head from "next/head"
 
@@ -8,6 +8,9 @@ import Navbar from "../Components/Navbar"
 import Footer from "../Components/footer"
 
 const forgetPassword = () => {
+
+    const css = {width: "100%", height: "auto" }
+
     return (
         <>
             <Head>   
@@ -20,7 +23,7 @@ const forgetPassword = () => {
 
             <Container>
                 <div id={ForgetCss.login_logo} className="text-center">
-                    <img src="/img/logo.png" alt="" />
+                    <Image width="200" height="60" layout="intrinsic" style={css} src="/img/logo.png" alt="" />
                 </div>
 
                 <div id={ForgetCss.login_form}>

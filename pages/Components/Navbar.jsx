@@ -1,3 +1,5 @@
+import Image from "next/legacy/image"
+
 import React, {useState} from "react"
 import NavbarCss from "../../styles/navbar.module.css";
 import Link from "next/link"
@@ -15,12 +17,14 @@ const Navbar = () => {
         setServiceShow(!serviceShow)
     }
 
+    const css = {width: "100%", height: "auto" }
+
     return (
         <>
             <div id={NavbarCss.navbar}>
                 <div className="d-flex align-items-center">
                         <Link href='/'>
-                            <img id={NavbarCss.logo} src="/img/logo.png" alt="" />
+                            <Image width="180" height="50" layout="intrinsic" style={css} id={NavbarCss.logo} src="/img/logo.png" alt="" />
                         </Link>
 
                         <ul id={NavbarCss.navItems} className='m-auto'>
@@ -51,8 +55,10 @@ const Navbar = () => {
                             <Link href="/free-trial" className="btn" id={NavbarCss.trial_btn}>Free Trial</Link>
                             <Link href="/login" className="btn" id={NavbarCss.account_btn}>My Account</Link>
                         </div>
-
-                        <img src="/img/hambar.png" id={NavbarCss.hambar} onClick={showNavbar} alt="" />
+                        
+                        <div id={NavbarCss.hambar}>
+                            <Image width="50" height="50" layout="intrinsic" style={css} src="/img/hambar.png" onClick={showNavbar} alt="" />
+                        </div>
                     
                 </div>
 

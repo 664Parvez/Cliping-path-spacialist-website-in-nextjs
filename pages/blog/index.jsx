@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import Image from "next/legacy/image"
 
 import Container from "../Components/container"
 import BlogCss from '../../styles/blog.module.css'
@@ -22,6 +23,9 @@ export async function getServerSideProps () {
 
 
 const blog = ({data}) => {
+
+    const css = {width: "100%", height: "auto" }
+
     return (
         <>
 
@@ -46,7 +50,7 @@ const blog = ({data}) => {
                                     {
                                         items.no % 2 === 1 ? 
                                         <div className="col-lg-7 mt-4">
-                                            <img src={items.blogImg} alt="" />
+                                            <Image width="200" height="100" layout="responsive" style={css} src={items.blogImg} alt="" />
                                             <p><span>Jan 23, 23</span> | <span>Author : Parvez</span> | <span>Category : {items.blogCategory}</span></p>
                                             <h3>{items.blogTitle}</h3>
                                             <h5>{items.blogSubTitle}</h5>
@@ -58,7 +62,7 @@ const blog = ({data}) => {
                                         : 
                                         
                                         <div className="col-lg-5 mt-4">
-                                            <img src={items.blogImg} alt="" />
+                                            <Image width="200" height="100" layout="responsive" style={css} src={items.blogImg} alt="" />
                                             <p><span>Jan 23, 23</span> | <span>Author : Parvez</span> | <span>Category : {items.blogCategory}</span></p>
                                             <h3>{items.blogTitle}</h3>
                                             <h5>{items.blogSubTitle}</h5>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/legacy/image"
 
 import Container from "../Components/container"
 import AboutCss from "../../styles/about.module.css"
@@ -8,6 +9,9 @@ import Navbar from "../Components/Navbar"
 import Footer from "../Components/footer";
 
 const about = () => {
+
+    const css = {width: "100%", height: "auto" }
+
     return (
         <>
 
@@ -28,7 +32,7 @@ const about = () => {
                             <p>Clipping Path Graphics Founded in 2012 with having the vision of image editing services around the world. You are always welcome if you need quality, satisfactory work, skilled and professional designers. Especially quick time turnaround service, long-term business relationships by the need of your online business or e-commerce image editing services. “Clipping path graphics” is a very well-known image editing company in the field of the international marketplace like online shops & e-commerce businesses.</p>
                         </div>
                         <div className="col-lg-5">
-                            <img src="/img/banner-img.webp" alt="" />
+                            <Image width="200" height="190" layout="responsive" style={css} src="/img/banner-img.webp" alt="" />
                         </div>
                     </div>
                 </div>
@@ -36,7 +40,7 @@ const about = () => {
                 <div id={AboutCss.about_two}>
                         <div className="row d-flex align-items-center">
                             <div className="col-lg-6">
-                                <img src="/img/about-work.svg" alt="" />
+                                <Image width="200" height="140" layout="responsive" style={css} src="/img/about-work.svg" alt="" />
                             </div>
                             <div className="col-lg-6">
                                 <h3>Our Services</h3>
@@ -53,7 +57,7 @@ const about = () => {
                                 <h4>SIMPLY EXPRESS TO EVERY ONE OF US. THE NECESSITIES YOU NEED TO DO AND AFTERWARD BE WITHOUT PRESSURE. YOU WILL COMPLETE THE ERRAND 100% EXACT IN TIME AS WE HAVE MORE THAN 150 TALENTED VISUAL PLANNERS WHO WORK DAY IN AND DAY OUT FOR YOUR SERVICE.</h4>
                             </div>
                             <div className="col-lg-5 text-center">
-                                <img src="/img/express.webp" alt="" />
+                                <Image width="280" height="250" layout="intrinsic" style={css} src="/img/express.webp" alt="" />
                             </div>
                         </div>
                 </div>

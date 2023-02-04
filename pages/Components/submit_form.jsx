@@ -1,13 +1,16 @@
 import ServiceCss from '../../styles/service.module.css'
+import Image from "next/legacy/image"
 
 const Form = ({data}) => {
+
+    const css = {width: "100%", height: "auto" }
 
     return (
         <>
             <div id={ServiceCss.form_of_upload}>
                 <div className="row d-flex align-items-center">
                             <div className="col-lg-6">
-                                <img src="/img/Get-started-with-free-trial.jpg" alt="" />
+                                <Image width="130" height="150" layout="responsive" style={css} src="/img/Get-started-with-free-trial.jpg" alt="" />
                             </div>
                             <div className="col-lg-6">
                                 <h2>Get Started With the FREE TRIAL</h2>

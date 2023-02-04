@@ -1,6 +1,7 @@
 import Container from "../Components/container"
 import SignupCss from "../../styles/sign-up.module.css"
-import Image from "next/image"
+
+import Image from "next/legacy/image"
 import Link from "next/link"
 import Head from "next/head"
 
@@ -9,6 +10,9 @@ import Footer from "../Components/footer"
 
 
 const signup = () => {
+
+    const css = {width: "100%", height: "auto" }
+
     return(
         <>
 
@@ -23,7 +27,7 @@ const signup = () => {
 
             <Container>
                 <div id={SignupCss.signup_logo} className="text-center">
-                    <img src="/img/logo.png" alt="" />
+                    <Image width="200" height="60" layout="intrinsic" style={css} src="/img/logo.png" alt="" />
                 </div>
 
                 <div id={SignupCss.signup_form}>
